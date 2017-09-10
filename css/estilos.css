@@ -7,6 +7,7 @@ header{
 	top: 0%;
 	left: 0%;
 	margin-bottom: 100px;
+	z-index: 999;
 
 }
 #header{
@@ -80,4 +81,34 @@ figcaption a {
 }
 #footer li{
 	list-style: none;
+}
+/*galeria paisajes*/
+#galeriaP {
+	margin-top:110px; 
+}
+#galeriaP li{
+	display: inline;
+	list-style: none;
+	padding: 10px 10px 10px 10px;
+}
+/*galeria retratos*/
+#galeriaR {
+	margin-top:110px; 
+}
+#galeriaR li{
+	display: inline;
+	list-style: none;
+	padding: 10px 10px 10px 10px;
+}
+#blur{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+#gris{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+}
+#sepia{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
 }
