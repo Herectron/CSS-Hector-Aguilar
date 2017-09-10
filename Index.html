@@ -7,12 +7,36 @@
 	<style type="text/css">
 		body{
 			font-family: Dancing Script;
+			background-color: #82c3a6;
+			color: white;
+			}
+		@-webkit-keyframes Animacionu{
+			25%{
+				transform: rotate(45deg);
+			}
+			50%{
+				transform: rotate(-45deg);
+			}
+			75%{
+				transform: rotate(45deg);
+			}
+			100%{
+				transform: rotate(-45deg);
+			}
+		}
+		@-webkit-keyframes AnimacionD{
+			from{
+				transform: translateX(-20px);
+			}
+			to{
+				transform: translateY(-5px);
+			}
 		}
 	</style>
 </head>
 	
 <body>
-	
+	<!--inicio de la pagina-->
 	<header>
 		<div id="header">
 		<h1>Comenzando con La fotografia</h1>
@@ -23,8 +47,48 @@
 		</ul>
 		</div>
 	</header>
-	<div id="Central_1">
-		<img src="imagenes/fotografia_cocker.jpg">
-	</div>
+	<!--imagen central-->
+	<div id="Contenido">
+		<figure>
+	
+		<img width="70%" src="imagenes/fotografia_cocker.jpg" alt="Imagen Central">
+		<figcaption></figcaption>
+		</figure>
+	</div >
+	<!--Imagenes de link-->
+		<div id="imagen_secundaria">
+		<figure class="img1">
+			<img  src="imagenes/fotografia_paisaje2.jpg" alt="Fotografia Paisaje" width="100%" >
+			<figcaption><a href="">Paisajes</a></figcaption>
+		</figure>
+		<figure class="img2">
+			<img  src="imagenes/fotografia_retrato1.jpg" alt="Fotografia Paisaje" width="100%">
+			<figcaption><a href="">Retratos</a></figcaption>
+		</figure>
+		
+		</div>
+		<!--pie de pagina-->
+	<footer id="footer">
+		<ul id="Contacto">
+			<li><h2>Contacto</h2></li>
+			<li><a href="mailto:hectorreneaguilarsantamarina@gmail.com">hectorreneaguilarsantamarina@gmail.com</a></li>
+			<li>22 ave a 5-69</li>
+			<li>42403500</li>
+		</ul>
+		<ul id="Terminos">
+			<li><h2>Terminos</h2></li>
+			<li>Conoce nuestros terminos y condiciones</li>
+		</ul>
+		<ul id="Redes Sociales">
+			<li><h2>Redes Sociales</h2></li>
+			<li><a href="http://facebook.com"><img src="imagenes/facebook_logo.jpg" alt="facebook" width="20px">Facebook</a></li>
+			<li><a href="http://twitter.com"><img src="imagenes/twitter_logo.png" alt="twitter" width="20px">Twitter</a></li>
+			<li><a href="http://instagram.com"><img src="imagenes/instagram_logo.png" alt="instagram" width="20px">Instagram</a></li>
+		</ul>
+		<ul id="Derechos">
+			<li><h2>Derechos</h2></li>
+			<li>Copyright - 2020</li>
+		</ul>
+	</footer>
 </body>
 </html>
