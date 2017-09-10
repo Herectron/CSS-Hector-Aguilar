@@ -3,14 +3,12 @@ header{
 	background: rgb(91,121,137);
 	border-radius: 10px;
 	width: 100%;
-	position:fixed;
-	top: 0%;
-	left: 0%;
+	position: fixed;
+	top: 0;
+	left: 0;
 	z-index: 999;
-
-}
-#header{
-	display: inline;
+	display: table-row;
+	flex-direction: row;
 }
 #header h1{
 	text-shadow: 2px 2px 3px #02010a;
@@ -27,11 +25,14 @@ header{
 li a{
 	text-decoration: none;
 	color: white;
+	}
+#header ul{
+	margin-top: -60px;
 }
 #header li:hover{
 	background-color: #586D79;
 	color: black ;
-}
+	}
 /*primera imagen*/
 #Contenido {
 	margin: 0 auto;
@@ -43,19 +44,20 @@ li a{
 	height: 30px;
 	background-color: #d5c75f;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
 }
 .img1 {
 	float: left;	
 	background-color: #d5c75f;
-
+	
 }
 
 .img2 {
 	float: right;
 	background-color: #d5c75f;
-	box-shadow: 2px 2px 2px #82c3a6;
-	border-radius: 2px solid black;
-
+	margin-right: 0 auto;
+	
 }
 figcaption a {
 	text-decoration: none;
@@ -95,6 +97,10 @@ header{
 /*galeria paisajes*/
 #galeriaP {
 	margin-top:110px; 
+	padding-left: 0;
+}
+#galeriaP ul{
+	margin-left: 0px;
 }
 #galeriaP li{
 	display: inline;
@@ -126,6 +132,9 @@ header{
 @media (max-width: 420px){
 	#header h1{
 		width: 100%;
+		font-size: 24px;
+		margin-top: 90px;
+		text-align: center;
 	}
 	#header ul{
 		width: 100%;
@@ -133,25 +142,48 @@ header{
 
 	#Contenido{
 		width: 100%;
-		margin-top: 190px;
+		margin-top: 180px;
 	}
 	#imagen_secundaria{
-		height: 550px;
+		height: 150px;
+		display: inline-block;
+	}
+	#imagen_secundaria img{
+		width: 100px;
+	}
+	.img1 {
+		margin: inherit;
+
+	}
+	.img2 {
+		margin: 0 auto;
+		width: 100%;
+		float: left;
 	}
 	#footer ul{
 		font-size: 12px;
 	}
 	#galeriaP{
-		margin-top: 150px;
+		margin-top: 170px;
+		padding-left: 0;
 	}
 	#galeriaR{
-		margin-top: 150px;
+		margin-top: 170px;
+		margin-right: 5px
+		 
 	}
 	#galeriaP li img{
 		width: 100%;
+		margin: 0 auto;
 	}
 	#galeriaR li img{
 		width: 100%;
+	}
+	#galeriaR ul{
+		padding-left: 0px;
+	}
+	#galeriaP ul{
+		padding-left: 0px;
 	}
 	}
 @media (min-width: 420px){
@@ -173,6 +205,7 @@ header{
 	}
 	#imagen_secundaria{
 		height: 330px;
+
 	}
 	#footer ul{
 		font-size: 16px;
